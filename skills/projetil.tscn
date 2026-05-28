@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cmctt22jqqvrj"]
+
+[ext_resource type="Script" uid="uid://8gvanxq4mnnq" path="res://skills/projetil.gd" id="1_4dvx7"]
+[ext_resource type="Texture2D" uid="uid://c8163geexy860" path="res://Art/projectile.png" id="2_l3v51"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_b5tp2"]
+a = Vector2(-2, 0)
+b = Vector2(27, 0)
+
+[node name="Projetil" type="Area2D" unique_id=59348145]
+collision_layer = 0
+collision_mask = 5
+script = ExtResource("1_4dvx7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1978946516]
+shape = SubResource("SegmentShape2D_b5tp2")
+
+[node name="FlechaSprite2D" type="Sprite2D" parent="." unique_id=921489827]
+position = Vector2(12, 0)
+texture = ExtResource("2_l3v51")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

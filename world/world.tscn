@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bcay8mnwdcts0"]
+
+[ext_resource type="Script" uid="uid://c55jf1d4edn3i" path="res://world/world.gd" id="1_4717r"]
+[ext_resource type="PackedScene" uid="uid://bsc67cjxkpytf" path="res://heroes/archer/archer.tscn" id="1_tcf2h"]
+[ext_resource type="PackedScene" uid="uid://dsh1bgc0n6mdr" path="res://Art/HUD/container_hud.tscn" id="3_h5o24"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xwo6f"]
+size = Vector2(1280, 40)
+
+[node name="Mundo" type="Node2D" unique_id=1394292603]
+script = ExtResource("1_4717r")
+
+[node name="Chao" type="StaticBody2D" parent="." unique_id=1762002396]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chao" unique_id=931562085]
+position = Vector2(640, 700)
+shape = SubResource("RectangleShape2D_xwo6f")
+
+[node name="ColorRect" type="ColorRect" parent="Chao" unique_id=490807726]
+offset_top = 680.0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0, 0.3882353, 0, 1)
+
+[node name="Player" parent="." unique_id=426616990 instance=ExtResource("1_tcf2h")]
+position = Vector2(87, 655)
+
+[node name="ContainerHUD" parent="." unique_id=1218590552 instance=ExtResource("3_h5o24")]

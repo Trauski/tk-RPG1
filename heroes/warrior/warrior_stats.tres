@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="HeroStats" format=3 uid="uid://8048tyed2tvm"]
+
+[ext_resource type="Script" uid="uid://cf84piuxsx4xd" path="res://components/hero_stats.gd" id="1_ktktf"]
+
+[resource]
+script = ExtResource("1_ktktf")
+nome = "Liam"
+vida_max = 650.0
+velocidade_base = 300.0
+mana_max = 0.0
+ataque_base = 40.0
+defesa_base = 20.0
+is_ranged = false
+metadata/_custom_type_script = "uid://cf84piuxsx4xd"

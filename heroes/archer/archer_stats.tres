@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="HeroStats" format=3 uid="uid://b2tk0m8gb300i"]
+
+[ext_resource type="Script" uid="uid://cf84piuxsx4xd" path="res://components/hero_stats.gd" id="1_kf8vs"]
+
+[resource]
+script = ExtResource("1_kf8vs")
+nome = "Arryn"
+vida_max = 500.0
+velocidade_base = 300.0
+mana_max = 0.0
+ataque_base = 25.0
+metadata/_custom_type_script = "uid://cf84piuxsx4xd"

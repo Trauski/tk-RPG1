@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://dsh1bgc0n6mdr"]
+
+[ext_resource type="Texture2D" uid="uid://cuj5l4b8665gg" path="res://Art/HUD/BHP_base.png" id="1_n2jfg"]
+[ext_resource type="Script" uid="uid://b53kxfjbu2l0j" path="res://Art/HUD/container_hud.gd" id="1_pf7n0"]
+[ext_resource type="Texture2D" uid="uid://dww3s8a53xh64" path="res://Art/HUD/BHP_red.png" id="2_pf7n0"]
+[ext_resource type="Texture2D" uid="uid://b6xhvgyi1s2p" path="res://Art/HUD/BHP_blue.png" id="3_uu6f6"]
+[ext_resource type="Texture2D" uid="uid://dxrcgmlakjsn7" path="res://Art/HUD/BHP_yellow.png" id="4_ksm8j"]
+
+[node name="ContainerHUD" type="CanvasLayer" unique_id=1218590552]
+offset = Vector2(20, 20)
+scale = Vector2(0.4, 0.4)
+transform = Transform2D(0.4, 0, 0, 0.4, 20, 20)
+script = ExtResource("1_pf7n0")
+
+[node name="MolduraBase" type="TextureRect" parent="." unique_id=2070259882]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_n2jfg")
+
+[node name="BarraHP" type="TextureProgressBar" parent="." unique_id=424054904]
+offset_left = 236.0
+offset_top = 65.0
+offset_right = 1463.0
+offset_bottom = 431.0
+value = 50.0
+texture_under = ExtResource("2_pf7n0")
+texture_progress = ExtResource("2_pf7n0")
+tint_under = Color(0.27058825, 0.27058825, 0.27058825, 1)
+
+[node name="TextoHP" type="Label" parent="." unique_id=2114817399]
+offset_left = 949.99994
+offset_top = 105.0
+offset_right = 1142.0
+offset_bottom = 178.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 34
+
+[node name="BarraMP" type="TextureProgressBar" parent="." unique_id=1870930893]
+offset_left = 242.0
+offset_top = 181.0
+offset_right = 1057.0
+offset_bottom = 285.0
+value = 50.0
+texture_under = ExtResource("3_uu6f6")
+texture_progress = ExtResource("3_uu6f6")
+tint_under = Color(0.27022192, 0.27022192, 0.2702219, 1)
+
+[node name="TextoMP" type="Label" parent="." unique_id=374962432]
+offset_left = 862.5
+offset_top = 205.0
+offset_right = 1005.5
+offset_bottom = 269.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 32
+
+[node name="BarraXP" type="TextureProgressBar" parent="." unique_id=976124081]
+offset_left = 206.0
+offset_top = 272.0
+offset_right = 965.0
+offset_bottom = 328.0
+value = 50.0
+texture_under = ExtResource("4_ksm8j")
+texture_progress = ExtResource("4_ksm8j")
+tint_under = Color(0.27058825, 0.27058825, 0.27058825, 1)
+
+[node name="TextoXP" type="Label" parent="." unique_id=1686363807]
+offset_left = 770.0
+offset_top = 277.49997
+offset_right = 838.0
+offset_bottom = 322.49997
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 30
